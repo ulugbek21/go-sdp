@@ -9,7 +9,7 @@ different Goroutines. Node.js uses this approach, providing event-driven program
 To understand it better, we can talk about a type that has embedded the behavior in case an execution goes well or in case it fails.
 
 <p align="center">
-    <img src="./async1.jpg">
+    <img src="./async1.jpg" height="400">
 </p>
 
 In the preceding diagram, the main function launches a Future within a new Goroutine. It won't wait for anything, nor will it receive any progress of the Future. It really fires and forgets it.
@@ -17,7 +17,7 @@ In the preceding diagram, the main function launches a Future within a new Gorou
 The interesting thing here is that we can launch a new Future within a Future and embed as many Futures as we want in the same Goroutine (or new ones). The idea is to take advantage of the result of one Future to launch the next. For example:
 
 <p align="center">
-    <img src="./async2.jpg">
+    <img src="./async2.jpg" height="400">
 </p>
 
 Here, we have the same Future. In this case, if the Execute function returned a correct result, the Success function is executed, and only in this case we execute a new Goroutine with another Future inside (or even without a Goroutine).

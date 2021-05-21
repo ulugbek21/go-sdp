@@ -11,7 +11,7 @@ func TestStringOrError_Execute(t *testing.T) {
 	t.Run("Success result", func(t *testing.T) {
 		var wg sync.WaitGroup
 		wg.Add(1)
-		go timeout(t, &wg)
+		go timeout(t, &wxg)
 		future.Success(func(s string) {
 			t.Log(s)
 

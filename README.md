@@ -30,6 +30,17 @@ A list of Software Design Patterns discussed in the Exadel's Go Meetup. All sour
 | [Flyweight](/structural/flyweight) | Reuses existing instances of objects with similar/identical state to minimize resource usage |
 | [Proxy](/structural/proxy) | Wraps an object to hide some of its characteristics |
 
+## Concurrency Patterns
+
+| Pattern | Description |
+|:-------:|:----------- |
+| [Barrier](/concurrency/barrier) | Puts up a barrier so that
+nobody passes until all the results are retrieved |
+| [Future](/concurrency/future) | Implements asynchronous programming in Go |
+| [Pipeline](/concurrency/pipeline) | Creates a concurrent structure of a multistep algorithm |
+| [Workers Pool](/concurrency/workers_pool) | Bounds the amount of Goroutines available |
+| [Publisher/Subscriber](/concurrency/publish_subscriber) | Concurrent-safe Observer Pattern |
+
 ## References
 
 - Contreras, M., 2017. Go Design Patterns. 1st ed. Birmingham: Packt Publishing Ltd.
