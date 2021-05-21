@@ -34,8 +34,7 @@ A list of Software Design Patterns discussed in the Exadel's Go Meetup. All sour
 
 | Pattern | Description |
 |:-------:|:----------- |
-| [Barrier](/concurrency/barrier) | Puts up a barrier so that
-nobody passes until all the results are retrieved |
+| [Barrier](/concurrency/barrier) | Puts up a barrier so that nobody passes until all the results are retrieved |
 | [Future](/concurrency/future) | Implements asynchronous programming in Go |
 | [Pipeline](/concurrency/pipeline) | Creates a concurrent structure of a multistep algorithm |
 | [Workers Pool](/concurrency/workers_pool) | Bounds the amount of Goroutines available |
