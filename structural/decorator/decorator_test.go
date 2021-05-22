@@ -12,6 +12,8 @@ func TestPizzaDecorator_AddIngredient(t *testing.T) {
 	if !strings.Contains(pizzaResult, expectedText) {
 		t.Errorf("When calling the add ingredient of the pizza decorator it must return the text %sthe expected text, not '%s'", pizzaResult, expectedText)
 	}
+
+	t.Log(pizzaResult)
 }
 
 func TestOnion_AddIngredient(t *testing.T) {
@@ -30,6 +32,8 @@ func TestOnion_AddIngredient(t *testing.T) {
 	if !strings.Contains(onionResult, "onion") {
 		t.Errorf("When calling the add ingredient of the onion decorator it"+"must return a text with the word 'onion', not '%s'", onionResult)
 	}
+
+	t.Log(onionResult)
 }
 
 func TestMeat_AddIngredient(t *testing.T) {
@@ -48,6 +52,8 @@ func TestMeat_AddIngredient(t *testing.T) {
 	if !strings.Contains(meatResult, "meat") {
 		t.Errorf("When calling the add ingredient of the meat decorator it"+"must return a text with the word 'meat', not '%s'", meatResult)
 	}
+
+	t.Log(meatResult)
 }
 
 func TestPizzaDecorator_FullStack(t *testing.T) {

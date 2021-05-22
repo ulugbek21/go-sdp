@@ -1,4 +1,4 @@
-# Bridge Pattern
+# Composite Pattern
 
 The Composite design pattern favors composition (commonly defined as a has a relationship) over inheritance (an is a relationship). The composition over inheritance approach has been a source of discussions among engineers since the nineties. We will learn how to create object structures by using a has a approach. All in all, Go doesn't have inheritance because it doesn't need it!
 
